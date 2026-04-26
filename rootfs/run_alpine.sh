@@ -12,7 +12,7 @@ chmod 1777 $ALPINE_DIR/tmp
 chmod 1777 $PROOT_TMP
 
 ARGS="--kill-on-exit"
-ARGS="$ARGS -w /"
+ARGS="$ARGS -w /root"
 
 for system_mnt in /apex /odm /product /system /system_ext /vendor /linkerconfig/ld.config.txt /linkerconfig/com.android.art/ld.config.txt; do
     if [ -e "$system_mnt" ]; then
