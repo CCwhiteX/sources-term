@@ -46,4 +46,4 @@ else
 fi
 
 cd $ALPINE_DIR
-exec $LINKER $BIN_DIR/proot $ARGS /bin/sh -l
+exec $LINKER $BIN_DIR/proot $ARGS /bin/login -f root
